@@ -120,7 +120,7 @@ public class Services {
         double croissance = product.getCroissance();
         if (qtchange > 0) {             
             // soustraire de l'argent du joueur le cout de la quantité achetée
-            double depense = product.getCout()*Math.pow(croissance, product.getQuantite())*((1-Math.pow(croissance, qtchange))/(1-croissance)); 
+            double depense = product.getCout()* qtchange * ((1-Math.pow(croissance, qtchange))/(1-croissance)); 
             world.setMoney(world.getMoney() - depense); 
             // et mettre à jour la quantité de product
             
@@ -215,17 +215,18 @@ public class Services {
                 long t = Math.floorDiv(temp - lastUpd + p.getVitesse() - p.getTimeleft(), p.getVitesse());
                 long restant = Math.floorMod(temp - lastUpd + p.getVitesse() - p.getTimeleft(), p.getVitesse());
                 
-                w.setMoney(w.getMoney()+ (p.getRevenu() * (1+w.getActiveangels() * w.getAngelbonus()/100))*t);
-                w.setScore(w.getMoney()+ (p.getRevenu() * (1+w.getActiveangels() * w.getAngelbonus()/100))*t);
+                w.setMoney(w.getMoney()+ (p.getRevenu() *p.getQuantite() * (1+w.getActiveangels() * w.getAngelbonus()/100))*t);
+                w.setScore(w.getMoney()+ (p.getRevenu() *p.getQuantite() * (1+w.getActiveangels() * w.getAngelbonus()/100))*t);
                 
                 p.setTimeleft(restant);
                 if(p.getTimeleft() < 0){
                     p.setTimeleft(0);
                 }
             }else{
+
                 if( p.getTimeleft() > 0 && p.getTimeleft() <= temp - w.getLastupdate()){
-                    w.setMoney(w.getMoney()+ (p.getRevenu() * (1+w.getActiveangels() * w.getAngelbonus()/100)));
-                    w.setScore(w.getMoney()+ (p.getRevenu() * (1+w.getActiveangels() * w.getAngelbonus()/100)));
+                    w.setMoney(w.getMoney()+ (p.getRevenu() *p.getQuantite() * (1+w.getActiveangels() * w.getAngelbonus()/100)));
+                    w.setScore(w.getMoney()+ (p.getRevenu() * p.getQuantite() * (1+w.getActiveangels() * w.getAngelbonus()/100)));
                     p.setTimeleft(0);
                 }else if (p.getTimeleft() > 0){
                     p.setTimeleft(p.getTimeleft() - (temp - w.getLastupdate()));

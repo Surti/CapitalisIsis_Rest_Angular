@@ -6,54 +6,55 @@ and open the template in the editor.
 -->
 
 
+
 <world
     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
-    xsi:noNamespaceSchemaLocation='worldSchema.xsd'>
-    <name>La Petite Literie</name>
-    <logo>img/logo.jpg</logo>
-    <money>5</money>
-    <score>0.0</score>
-    <totalangels>0.0</totalangels>
-    <activeangels>0.0</activeangels>
-    <angelbonus>0</angelbonus>
+    xsi:noNamespaceSchemaLocation='jaxb/world/worldSchema.xsd'>
+    <name>GreenWorld</name>
+    <logo>img/apple_world.png</logo>
+    <money>10</money>
+    <score>0</score>
+    <totalangels>0</totalangels>
+    <activeangels>0</activeangels>
+    <angelbonus>2</angelbonus>
     <lastupdate>0</lastupdate>
     <products>
         <product>
             <id>1</id>
-            <name>Tapis Marocain</name>
-            <logo>img/TapisMarocain.jpg</logo>
+            <name>Carottes</name>
+            <logo>img/cawotte.jpg</logo>
             <cout>4</cout>
             <croissance>1.07</croissance>
             <revenu>1</revenu>
             <vitesse>500</vitesse>
-            <quantite>1</quantite>
+            <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>Tapis Miteux</name>
-                    <logo>img/Tapis1.jpg</logo>
-                    <seuil>25</seuil>
-                    <idcible>1</idcible>
-                    <ratio>1.5</ratio>
-                    <typeratio>gain</typeratio>
-                    <unlocked>false</unlocked>
-                </pallier>
-                <pallier>
-                    <name>Tapis Propre</name>
-                    <logo>img/Pallier1_Tapis.jpg</logo>
-                    <seuil>50</seuil>
+                    <name>Carotte énergétique</name>
+                    <logo>img/cawotte.jpg</logo>
+                    <seuil>15</seuil>
                     <idcible>1</idcible>
                     <ratio>1.5</ratio>
                     <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
-                </pallier>
+                </pallier>    
                 <pallier>
-                    <name>Tapis Confortable</name>
-                    <logo>img/Tapis3.jpg</logo>
-                    <seuil>100</seuil>
+                    <name>Carotte fortifiante</name>
+                    <logo>img/cawotte.jpg</logo>
+                    <seuil>30</seuil>
                     <idcible>1</idcible>
-                    <ratio>5.5</ratio>
+                    <ratio>1.5</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>    
+                <pallier>
+                    <name>Carotte d'or</name>
+                    <logo>img/cawotte.jpg</logo>
+                    <seuil>50</seuil>
+                    <idcible>1</idcible>
+                    <ratio>1.5</ratio>
                     <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
                 </pallier>
@@ -61,43 +62,210 @@ and open the template in the editor.
         </product>
         <product>
             <id>2</id>
-            <name>Chauffage</name>
-            <logo>img/Chauffage.jpg</logo>
+            <name>Pistaches</name>
+            <logo>img/pistache-thumb.png</logo>
             <cout>60</cout>
             <croissance>1.15</croissance>
-            <revenu>30</revenu>
+            <revenu>60</revenu>
             <vitesse>3000</vitesse>
-            <quantite>1</quantite>
+            <quantite>0</quantite>
             <timeleft>0</timeleft>
             <managerUnlocked>false</managerUnlocked>
             <palliers>
                 <pallier>
-                    <name>Puissance Electrique</name>
-                    <logo>img/Chaleur.jpg</logo>
-                    <seuil>25</seuil>
+                    <name>Pistache énergétique</name>
+                    <logo>img/pistache-thumb.png</logo>
+                    <seuil>20</seuil>
                     <idcible>2</idcible>
-                    <ratio>1.5</ratio>
-                    <typeratio>gain</typeratio>
-                    <unlocked>false</unlocked>
-                </pallier>
-                <pallier>
-                    <name>Consommation</name>
-                    <logo>img/Consommation.jpg</logo>
-                    <seuil>50</seuil>
-                    <idcible>2</idcible>
-                    <ratio>1.5</ratio>
+                    <ratio>1.4</ratio>
                     <typeratio>vitesse</typeratio>
                     <unlocked>false</unlocked>
-                </pallier>
+                </pallier>    
                 <pallier>
-                    <name>Chaleur x2</name>
-                    <logo>img/Chaleur.jpg</logo>
-                    <seuil>100</seuil>
+                    <name>Pistache fortifiante</name>
+                    <logo>img/pistache-thumb.png</logo>
+                    <seuil>60</seuil>
                     <idcible>2</idcible>
-                    <ratio>1.5</ratio>
+                    <ratio>1.4</ratio>
                     <typeratio>gain</typeratio>
                     <unlocked>false</unlocked>
+                </pallier>    
+                <pallier>
+                    <name>Pistache d'or</name>
+                    <logo>img/pistache-thumb.png</logo>
+                    <seuil>1000</seuil>
+                    <idcible>2</idcible>
+                    <ratio>1.4</ratio>
+                    <typeratio>ange</typeratio>
+                    <unlocked>false</unlocked>
                 </pallier>
+            </palliers>
+        </product>
+        <product>
+            <id>3</id>
+            <name>Fleur bisous</name>
+            <logo>img/bisous_plante.jpg</logo>
+            <cout>720</cout>
+            <croissance>1.14</croissance>
+            <revenu>540</revenu>
+            <vitesse>12000</vitesse>
+            <quantite>0</quantite>
+            <timeleft>0</timeleft>
+            <managerUnlocked>false</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>Fleur dopante</name>
+                    <logo>img/bisous_plante.jpg</logo>
+                    <seuil>25</seuil>
+                    <idcible>3</idcible>
+                    <ratio>1.2</ratio>
+                    <typeratio>vitesse</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>    
+                <pallier>
+                    <name>Fleur en pollenisation</name>
+                    <logo>img/bisous_plante.jpg</logo>
+                    <seuil>100</seuil>
+                    <idcible>3</idcible>
+                    <ratio>1.2</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>    
+                <pallier>
+                    <name>Fleur au parfum d'or</name>
+                    <logo>img/bisous_plante.jpg</logo>
+                    <seuil>1000</seuil>
+                    <idcible>3</idcible>
+                    <ratio>1.2</ratio>
+                    <typeratio>ange</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+        
+        <product>
+            <id>4</id>
+            <name>Serre</name>
+            <logo>img/serre.jpg</logo>
+            <cout>8640</cout>
+            <croissance>1.13</croissance>
+            <revenu>4320</revenu>
+            <vitesse>24000</vitesse>
+            <quantite>0</quantite>
+            <timeleft>0</timeleft>
+
+            <managerUnlocked>false</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>Plein Sud</name>
+                    <logo>soleil.png</logo>
+                    <seuil>50</seuil>
+                    <idcible>4</idcible>
+                    <ratio>1.3</ratio>
+                    <typeratio>vitesse</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>    
+                <pallier>
+                    <name>Grand pot</name>
+                    <logo>grandpot.png</logo>
+                    <seuil>100</seuil>
+                    <idcible>4</idcible>
+                    <ratio>1.3</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>    
+                <pallier>
+                    <name>Engrais mystère</name>
+                    <logo>engrais.png</logo>
+                    <seuil>1000</seuil>
+                    <idcible>4</idcible>
+                    <ratio>1.3</ratio>
+                    <typeratio>ange</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+
+        <product>
+            <id>5</id>
+            <name>Terre agricole</name>
+            <logo>img/terrain.png</logo>
+            <cout>103680</cout>
+            <croissance>1.12</croissance>
+            <revenu>51840</revenu>
+            <vitesse>96000</vitesse>
+            <quantite>0</quantite>
+            <timeleft>0</timeleft>
+            <managerUnlocked>false</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>Soleil abondant</name>
+                    <logo>soleil.png</logo>
+                    <seuil>50</seuil>
+                    <idcible>5</idcible>
+                    <ratio>1.15</ratio>
+                    <typeratio>vitesse</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>    
+                <pallier>
+                    <name>Hectars bonus</name>
+                    <logo>add.png</logo>
+                    <seuil>100</seuil>
+                    <idcible>5</idcible>
+                    <ratio>1.15</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>    
+                <pallier>
+                    <name>Pluie divine</name>
+                    <logo>rain.png</logo>
+                    <seuil>1000</seuil>
+                    <idcible>5</idcible>
+                    <ratio>1.15</ratio>
+                    <typeratio>ange</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+        <product>
+            <id>6</id>
+            <name>Ferme hydroponique</name>
+            <logo>img/hydropo.png</logo>
+            <cout>1244160</cout>
+            <croissance>1.11</croissance>
+            <revenu>622080</revenu>
+            <vitesse>384000</vitesse>
+            <quantite>0</quantite>
+            <timeleft>0</timeleft>
+            <managerUnlocked>false</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>Eclairage</name>
+                    <logo>ampoule.jpg</logo>
+                    <seuil>50</seuil>
+                    <idcible>6</idcible>
+                    <ratio>1.1</ratio>
+                    <typeratio>vitesse</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>    
+                <pallier>
+                    <name>Extension</name>
+                    <logo>add.png</logo>
+                    <seuil>100</seuil>
+                    <idcible>6</idcible>
+                    <ratio>1.1</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>    
+                <pallier>
+                    <name>Don du ciel</name>
+                    <logo>divin.jpg</logo>
+                    <seuil>1000</seuil>
+                    <idcible>6</idcible>
+                    <ratio>1.1</ratio>
+                    <typeratio>ange</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>              
             </palliers>
         </product>
     </products>
@@ -105,100 +273,100 @@ and open the template in the editor.
     </allunlocks>
     <upgrades>
         <pallier>
-            <name>Employee Chinois</name>
-            <logo>img/amelioration.png</logo>
-            <seuil>5000</seuil>
-            <idcible>0</idcible>
-            <ratio>2</ratio>
-            <typeratio>vitesse</typeratio>
-            <unlocked>false</unlocked>
-        </pallier>
-        <pallier>
-            <name>Don Catholique</name>
-            <logo>img/amelioration.png</logo>
-            <seuil>50000</seuil>
-            <idcible>0</idcible>
-            <ratio>2</ratio>
-            <typeratio>gain</typeratio>
-            <unlocked>false</unlocked>
-        </pallier>
-        <pallier>
-            <name>Action humanitaire</name>
-            <logo>img/amelioration.png</logo>
-            <seuil>75000</seuil>
-            <idcible>0</idcible>
-            <ratio>2</ratio>
-            <typeratio>gain</typeratio>
-            <unlocked>false</unlocked>
-        </pallier>
-        <pallier>
-            <name>Demande d'aide à l'Etat</name>
-            <logo>img/amelioration.png</logo>
-            <seuil>1</seuil>
-            <idcible>0</idcible>
-            <ratio>2</ratio>
-            <typeratio>vitesse</typeratio>
-            <unlocked>false</unlocked>
-        </pallier>
-        <pallier>
-            <name>Publicité</name>
-            <logo>img/amelioration.png</logo>
-            <seuil>250000</seuil>
+            <name>Carotte++</name>
+            <logo>img/cawotte.jpg</logo>
+            <seuil>10000</seuil>
             <idcible>1</idcible>
-            <ratio>3</ratio>
+            <ratio>2</ratio>
             <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Vendeur à la sauvette</name>
-            <logo>img/amelioration.png</logo>
-            <seuil>500000</seuil>
-            <idcible>1</idcible>
-            <ratio>5</ratio>
-            <typeratio>vitesse</typeratio>
-            <unlocked>false</unlocked>
-        </pallier>
-        <pallier>
-            <name>Heure creuse</name>
-            <logo>img/amelioration.png</logo>
-            <seuil>500000</seuil>
+            <name>Pistache++</name>
+            <logo>img/pistache-thumb.png</logo>
+            <seuil>40000</seuil>
             <idcible>2</idcible>
-            <ratio>5</ratio>
-            <typeratio>vitesse</typeratio>
-            <unlocked>false</unlocked>
-        </pallier>
-        <pallier>
-            <name>Thermostat</name>
-            <logo>img/amelioration.png</logo>
-            <seuil>500000</seuil>
-            <idcible>2</idcible>
-            <ratio>7</ratio>
+            <ratio>2</ratio>
             <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Auto-entreprenariat</name>
-            <logo>img/amelioration.png</logo>
+            <name>Serre++</name>
+            <logo>img/serre.jpg</logo>
+            <seuil>100000</seuil>
+            <idcible>4</idcible>
+            <ratio>2</ratio>
+            <typeratio>gain</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Bisous++</name>
+            <logo>img/bisous_plante.jpg</logo>
+            <seuil>200000</seuil>
+            <idcible>3</idcible>
+            <ratio>2</ratio>
+            <typeratio>gain</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Terre++</name>
+            <logo>img/terrain.png</logo>
+            <seuil>300000</seuil>
+            <idcible>5</idcible>
+            <ratio>2</ratio>
+            <typeratio>gain</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Ferme Hydro++</name>
+            <logo>img/hydropo.png</logo>
             <seuil>1000000</seuil>
-            <idcible>0</idcible>
-            <ratio>5</ratio>
+            <idcible>6</idcible>
+            <ratio>2</ratio>
             <typeratio>gain</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>Export Internationnal</name>
-            <logo>img/amelioration.png</logo>
-            <seuil>1500000</seuil>
-            <idcible>0</idcible>
-            <ratio>10</ratio>
-            <typeratio>gain</typeratio>
+            <name>Carotte speed</name>
+            <logo>img/cawotte.jpg</logo>
+            <seuil>10000</seuil>
+            <idcible>1</idcible>
+            <ratio>2</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Pistache speed</name>
+            <logo>img/pistache-thumb.png</logo>
+            <seuil>40000</seuil>
+            <idcible>2</idcible>
+            <ratio>2</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Bisous speed</name>
+            <logo>img/bisous_plante.jpg</logo>
+            <seuil>100000</seuil>
+            <idcible>3</idcible>
+            <ratio>2</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Carotte angélique</name>
+            <logo>img/cawotte.jpg</logo>
+            <seuil>150000</seuil>
+            <idcible>1</idcible>
+            <ratio>2</ratio>
+            <typeratio>ange</typeratio>
             <unlocked>false</unlocked>
         </pallier>
     </upgrades>
     <angelupgrades>
         <pallier>
             <name>Bénédiction angélique</name>
-            <logo>img/ange.jpg</logo>
+            <logo>img/angel.png</logo>
             <seuil>5</seuil>
             <idcible>0</idcible>
             <ratio>3</ratio>
@@ -207,7 +375,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Grâce de dieu</name>
-            <logo>img/ange.jpg</logo>
+            <logo>img/angel.png</logo>
             <seuil>50</seuil>
             <idcible>-1</idcible>
             <ratio>2</ratio>
@@ -216,7 +384,7 @@ and open the template in the editor.
         </pallier>
         <pallier>
             <name>Incarnation Divine</name>
-            <logo>img/ange.jpg</logo>
+            <logo>img/angel.png</logo>
             <seuil>150</seuil>
             <idcible>0</idcible>
             <ratio>100</ratio>
@@ -226,22 +394,60 @@ and open the template in the editor.
     </angelupgrades>
     <managers>
         <pallier>
-            <name>Vendeur Marocain</name>
-            <logo>img/Maroc.jpg</logo>
-            <seuil>1000</seuil>
+            <name>Bugs Bunny</name>
+            <logo>img/Bugs_Bunny.svg.png</logo>
+            <seuil>200</seuil>
             <idcible>1</idcible>
-            <ratio>1</ratio>
-            <typeratio>gain</typeratio>
+            <ratio>1.75</ratio>
+            <typeratio>vitesse</typeratio>
             <unlocked>false</unlocked>
         </pallier>
         <pallier>
-            <name>EDF</name>
-            <logo>img/edf.png</logo>
-            <seuil>15000</seuil>
+            <name>Pistache-Man</name>
+            <logo>img/pistacheman.png</logo>
+            <seuil>1600</seuil>
             <idcible>2</idcible>
-            <ratio>1</ratio>
-            <typeratio>gain</typeratio>
+            <ratio>1.6</ratio>
+            <typeratio>vitesse</typeratio>
             <unlocked>false</unlocked>
-        </pallier>       
+        </pallier>
+        <pallier>
+            <name>Ivy Poison</name>
+            <logo>img/ivy_poison.png</logo>
+            <seuil>16000</seuil>
+            <idcible>3</idcible>
+            <ratio>1.5</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Le vieux fermier</name>
+            <logo>img/farmer.png</logo>
+            <seuil>38000</seuil>
+            <idcible>4</idcible>
+            <ratio>1.46</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Sir Woody</name>
+            <logo>img/sir_woody.jpg</logo>
+            <seuil>60000</seuil>
+            <idcible>5</idcible>
+            <ratio>1.25</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Le Géant Vert</name>
+            <logo>img/geant_vert.png</logo>
+            <seuil>180000</seuil>
+            <idcible>6</idcible>
+            <ratio>1.2</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        
     </managers>
+
 </world>
