@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<world
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='worldSchema.xsd'>
+    <name>La Petite Literie</name>
+    <logo>img/logo.jpg</logo>
+    <money>5</money>
+    <score>0.0</score>
+    <totalangels>0.0</totalangels>
+    <activeangels>0.0</activeangels>
+    <angelbonus>0</angelbonus>
+    <lastupdate>0</lastupdate>
+    <products>
+        <product>
+            <id>1</id>
+            <name>Tapis Marocain</name>
+            <logo>img/TapisMarocain.jpg</logo>
+            <cout>4</cout>
+            <croissance>1.07</croissance>
+            <revenu>1</revenu>
+            <vitesse>500</vitesse>
+            <quantite>1</quantite>
+            <timeleft>0</timeleft>
+            <managerUnlocked>false</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>Tapis Miteux</name>
+                    <logo>img/Tapis1.jpg</logo>
+                    <seuil>25</seuil>
+                    <idcible>1</idcible>
+                    <ratio>1.5</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Tapis Propre</name>
+                    <logo>img/Pallier1_Tapis.jpg</logo>
+                    <seuil>50</seuil>
+                    <idcible>1</idcible>
+                    <ratio>1.5</ratio>
+                    <typeratio>vitesse</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Tapis Confortable</name>
+                    <logo>img/Tapis3.jpg</logo>
+                    <seuil>100</seuil>
+                    <idcible>1</idcible>
+                    <ratio>5.5</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+        <product>
+            <id>2</id>
+            <name>Chauffage</name>
+            <logo>img/Chauffage.jpg</logo>
+            <cout>60</cout>
+            <croissance>1.15</croissance>
+            <revenu>30</revenu>
+            <vitesse>3000</vitesse>
+            <quantite>1</quantite>
+            <timeleft>0</timeleft>
+            <managerUnlocked>false</managerUnlocked>
+            <palliers>
+                <pallier>
+                    <name>Puissance Electrique</name>
+                    <logo>img/Chaleur.jpg</logo>
+                    <seuil>25</seuil>
+                    <idcible>2</idcible>
+                    <ratio>1.5</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Consommation</name>
+                    <logo>img/Consommation.jpg</logo>
+                    <seuil>50</seuil>
+                    <idcible>2</idcible>
+                    <ratio>1.5</ratio>
+                    <typeratio>vitesse</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+                <pallier>
+                    <name>Chaleur x2</name>
+                    <logo>img/Chaleur.jpg</logo>
+                    <seuil>100</seuil>
+                    <idcible>2</idcible>
+                    <ratio>1.5</ratio>
+                    <typeratio>gain</typeratio>
+                    <unlocked>false</unlocked>
+                </pallier>
+            </palliers>
+        </product>
+    </products>
+    <allunlocks>
+    </allunlocks>
+    <upgrades>
+        <pallier>
+            <name>Employee Chinois</name>
+            <logo>img/amelioration.png</logo>
+            <seuil>5000</seuil>
+            <idcible>0</idcible>
+            <ratio>2</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Don Catholique</name>
+            <logo>img/amelioration.png</logo>
+            <seuil>50000</seuil>
+            <idcible>0</idcible>
+            <ratio>2</ratio>
+            <typeratio>gain</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Action humanitaire</name>
+            <logo>img/amelioration.png</logo>
+            <seuil>75000</seuil>
+            <idcible>0</idcible>
+            <ratio>2</ratio>
+            <typeratio>gain</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Demande d'aide à l'Etat</name>
+            <logo>img/amelioration.png</logo>
+            <seuil>1</seuil>
+            <idcible>0</idcible>
+            <ratio>2</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Publicité</name>
+            <logo>img/amelioration.png</logo>
+            <seuil>250000</seuil>
+            <idcible>1</idcible>
+            <ratio>3</ratio>
+            <typeratio>gain</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Vendeur à la sauvette</name>
+            <logo>img/amelioration.png</logo>
+            <seuil>500000</seuil>
+            <idcible>1</idcible>
+            <ratio>5</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Heure creuse</name>
+            <logo>img/amelioration.png</logo>
+            <seuil>500000</seuil>
+            <idcible>2</idcible>
+            <ratio>5</ratio>
+            <typeratio>vitesse</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Thermostat</name>
+            <logo>img/amelioration.png</logo>
+            <seuil>500000</seuil>
+            <idcible>2</idcible>
+            <ratio>7</ratio>
+            <typeratio>gain</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Auto-entreprenariat</name>
+            <logo>img/amelioration.png</logo>
+            <seuil>1000000</seuil>
+            <idcible>0</idcible>
+            <ratio>5</ratio>
+            <typeratio>gain</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Export Internationnal</name>
+            <logo>img/amelioration.png</logo>
+            <seuil>1500000</seuil>
+            <idcible>0</idcible>
+            <ratio>10</ratio>
+            <typeratio>gain</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+    </upgrades>
+    <angelupgrades>
+        <pallier>
+            <name>Bénédiction angélique</name>
+            <logo>img/ange.jpg</logo>
+            <seuil>5</seuil>
+            <idcible>0</idcible>
+            <ratio>3</ratio>
+            <typeratio>gain</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Grâce de dieu</name>
+            <logo>img/ange.jpg</logo>
+            <seuil>50</seuil>
+            <idcible>-1</idcible>
+            <ratio>2</ratio>
+            <typeratio>ange</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>Incarnation Divine</name>
+            <logo>img/ange.jpg</logo>
+            <seuil>150</seuil>
+            <idcible>0</idcible>
+            <ratio>100</ratio>
+            <typeratio>gain</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+    </angelupgrades>
+    <managers>
+        <pallier>
+            <name>Vendeur Marocain</name>
+            <logo>img/Maroc.jpg</logo>
+            <seuil>1000</seuil>
+            <idcible>1</idcible>
+            <ratio>1</ratio>
+            <typeratio>gain</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>
+        <pallier>
+            <name>EDF</name>
+            <logo>img/edf.png</logo>
+            <seuil>15000</seuil>
+            <idcible>2</idcible>
+            <ratio>1</ratio>
+            <typeratio>gain</typeratio>
+            <unlocked>false</unlocked>
+        </pallier>       
+    </managers>
+</world>
